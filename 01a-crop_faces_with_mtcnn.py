@@ -8,8 +8,9 @@ print(tf.__version__)
 tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
 physical_devices = tf.config.list_physical_devices('GPU')
+print("listing physical devices")
 print(physical_devices)
-tf.config.experimental.set_memory_growth(physical_devices[0], True)
+#tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 base_path = '.\\train_sample_videos\\'
 
